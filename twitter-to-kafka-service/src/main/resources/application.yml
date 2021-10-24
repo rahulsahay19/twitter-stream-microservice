@@ -1,3 +1,5 @@
+debug: true
+logging.level.org.springframework: debug
 twitter-to-kafka-service:
   twitter-keywords:
     - Java
