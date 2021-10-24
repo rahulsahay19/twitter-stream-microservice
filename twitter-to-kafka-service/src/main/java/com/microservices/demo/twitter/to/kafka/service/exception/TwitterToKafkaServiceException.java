@@ -14,4 +14,3 @@ public class TwitterToKafkaServiceException extends RuntimeException {
         super(message, cause);
     }
 }
-

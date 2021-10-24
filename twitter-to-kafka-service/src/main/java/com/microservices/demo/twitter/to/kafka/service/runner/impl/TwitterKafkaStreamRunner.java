@@ -16,15 +16,19 @@ import javax.annotation.PreDestroy;
 import java.util.Arrays;
 
 @Component
-@ConditionalOnProperty(name="twitter-to-kafka-service.enable-mock-tweets", havingValue = "false", matchIfMissing = true)
+@ConditionalOnProperty(name = "twitter-to-kafka-service.enable-mock-tweets", havingValue = "false", matchIfMissing = true)
 public class TwitterKafkaStreamRunner implements StreamRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterKafkaStreamRunner.class);
+
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
+
     private final TwitterKafkaStatusListener twitterKafkaStatusListener;
+
     private TwitterStream twitterStream;
 
-    public TwitterKafkaStreamRunner(TwitterToKafkaServiceConfigData configData, TwitterKafkaStatusListener statusListener) {
+    public TwitterKafkaStreamRunner(TwitterToKafkaServiceConfigData configData,
+                                    TwitterKafkaStatusListener statusListener) {
         this.twitterToKafkaServiceConfigData = configData;
         this.twitterKafkaStatusListener = statusListener;
     }
@@ -37,9 +41,9 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
     }
 
     @PreDestroy
-    public void shutdown(){
-        if(twitterStream!=null){
-            LOG.info("Shutting down twitter stream");
+    public void shutdown() {
+        if (twitterStream != null) {
+            LOG.info("Closing twitter stream!");
             twitterStream.shutdown();
         }
     }

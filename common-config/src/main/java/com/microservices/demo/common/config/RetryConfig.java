@@ -9,6 +9,7 @@ import org.springframework.retry.support.RetryTemplate;
 
 @Configuration
 public class RetryConfig {
+
     private RetryConfigData retryConfigData;
 
     public RetryConfig(RetryConfigData configData) {
@@ -16,7 +17,7 @@ public class RetryConfig {
     }
 
     @Bean
-    public RetryTemplate retryTemplate(){
+    public RetryTemplate retryTemplate() {
         RetryTemplate retryTemplate = new RetryTemplate();
 
         ExponentialBackOffPolicy exponentialBackOffPolicy = new ExponentialBackOffPolicy();
@@ -25,9 +26,12 @@ public class RetryConfig {
         exponentialBackOffPolicy.setMultiplier(retryConfigData.getMultiplier());
 
         retryTemplate.setBackOffPolicy(exponentialBackOffPolicy);
+
         SimpleRetryPolicy simpleRetryPolicy = new SimpleRetryPolicy();
         simpleRetryPolicy.setMaxAttempts(retryConfigData.getMaxAttempts());
+
         retryTemplate.setRetryPolicy(simpleRetryPolicy);
+
         return retryTemplate;
     }
 }

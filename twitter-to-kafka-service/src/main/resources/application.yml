@@ -1,13 +1,9 @@
-debug: true
-logging.level.org.springframework: debug
 twitter-to-kafka-service:
   twitter-keywords:
     - Java
     - Microservices
     - Kafka
     - Elasticsearch
-    - RahulSahay
-    - Rahul Sahay
   welcome-message: Hello microservices!
   enable-mock-tweets: false
   mock-min-tweet-length: 5
