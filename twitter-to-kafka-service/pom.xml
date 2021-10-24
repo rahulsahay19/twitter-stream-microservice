@@ -33,6 +33,14 @@
             <artifactId>microservices-demo</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>kafka-admin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>kafka-producer</artifactId>
+        </dependency>
     </dependencies>
 
     <properties>
