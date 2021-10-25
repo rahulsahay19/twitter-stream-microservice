@@ -799,3 +799,1181 @@ https://t.co/7AQJ8s2BZx sending to kafka topic twitter-topic
 2021-10-25 01:38:48 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream!
 2021-10-25 01:38:49 [SpringContextShutdownHook] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
 2021-10-25 01:38:49 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-10-25 12:42:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on WKMZT2752C34.global.publicisgroupe.net with PID 3050 (/Users/rahsahay/Rahul/MyExperiments/Java/SpringBoot/microservices-demo/twitter-to-kafka-service/target/classes started by rahsahay in /Users/rahsahay/Rahul/MyExperiments/Java/SpringBoot/microservices-demo)
+2021-10-25 12:42:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-10-25 12:42:13 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-10-25 12:42:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2021-10-25 12:42:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2021-10-25 12:42:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1635145933251
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2021-10-25 12:42:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.662 seconds (JVM running for 2.336)
+2021-10-25 12:42:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-10-25 12:42:13 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2021-10-25 12:42:13 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2021-10-25 12:42:13 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:14 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:14 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:14 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:15 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:15 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:15 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:16 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:16 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:16 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:17 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:17 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:17 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:17 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:18 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:18 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:18 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:19 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:19 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:20 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:20 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:21 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:21 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:21 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:22 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:22 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:22 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:23 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:23 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:23 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:24 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:24 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:24 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:25 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:25 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:25 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:26 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:26 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:27 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:27 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:27 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:28 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:28 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:28 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:31 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:31 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:31 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:32 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:32 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:32 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:33 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:33 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:33 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:34 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:34 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:34 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:35 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:35 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:35 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:36 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:36 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:37 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:37 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:37 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:38 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:38 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:38 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:39 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:39 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:39 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:40 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:40 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:40 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:41 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:41 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:41 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:42 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:42 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:42 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:43 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1635145963256) timed out at 1635145963257 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment.
+2021-10-25 12:42:43 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:43 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:43 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:44 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:44 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:44 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:45 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:45 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:46 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:46 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:46 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:47 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:47 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:47 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:48 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:48 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:48 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:49 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:49 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:49 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:50 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:50 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:50 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:51 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:51 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:52 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:52 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:52 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:53 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:53 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:53 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:54 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:54 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:54 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:55 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:55 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:55 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:56 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:56 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:56 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:57 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:57 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:57 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:58 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:42:58 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:59 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:42:59 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:42:59 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:00 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:00 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:00 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:01 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:01 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:01 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:02 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:02 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:02 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:03 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:03 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:03 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:04 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:04 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:05 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:05 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:05 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:06 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:06 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:06 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:07 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:07 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:07 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:08 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:08 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:08 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:09 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:10 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:10 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:10 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:11 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:11 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:11 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:12 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:12 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:12 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2021-10-25 12:43:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2021-10-25 12:43:13 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1635145993257) timed out at 1635145993261 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment.
+2021-10-25 12:43:13 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2021-10-25 12:43:13 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1635146023261) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
+2021-10-25 12:43:13 [SpringContextShutdownHook] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2021-10-25 12:43:14 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 1
+2021-10-25 12:44:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on WKMZT2752C34.global.publicisgroupe.net with PID 3296 (/Users/rahsahay/Rahul/MyExperiments/Java/SpringBoot/microservices-demo/twitter-to-kafka-service/target/classes started by rahsahay in /Users/rahsahay/Rahul/MyExperiments/Java/SpringBoot/microservices-demo)
+2021-10-25 12:44:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-10-25 12:44:11 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-10-25 12:44:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2021-10-25 12:44:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2021-10-25 12:44:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1635146051892
+2021-10-25 12:44:12 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2021-10-25 12:44:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.394 seconds (JVM running for 6.738)
+2021-10-25 12:44:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-10-25 12:44:12 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2021-10-25 12:44:12 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2021-10-25 12:44:12 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2021-10-25 12:44:12 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2021-10-25 12:44:12 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Kafka, Elasticsearch]
+2021-10-25 12:44:12 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-25 12:44:16 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-10-25 12:44:16 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-10-25 12:44:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ってか、いつの間にかアカウントがマイクロソフトと統合できるようになってるのね。
+統合しておこっかな。
+
+ランチャーもJAVAと統合版とまとめて管理できるといいんやが無理かひら。 sending to kafka topic twitter-topic
+2021-10-25 12:44:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1056429885491531776, "id": 1452533934378553346, "text": "ってか、いつの間にかアカウントがマイクロソフトと統合できるようになってるのね。\n統合しておこっかな。\n\nランチャーもJAVAと統合版とまとめて管理できるといいんやが無理かひら。", "createdAt": 1635146051000}' to topic='twitter-topic'
+2021-10-25 12:44:16 [Twitter4J Async Dispatcher[0]] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-10-25 12:44:16 [Twitter4J Async Dispatcher[0]] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-10-25 12:44:16 [Twitter4J Async Dispatcher[0]] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2021-10-25 12:44:16 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2021-10-25 12:44:16 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2021-10-25 12:44:16 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1635146056639
+2021-10-25 12:44:16 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 019XsmB7QHCEA5Lo87nZfQ
+2021-10-25 12:44:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @jnrUnderhood @mosh_im Php хорош, когда работает в связке с чем-то, но иногда и чистый тоже норм. Я перешел с java  на php и нифига не жалею sending to kafka topic twitter-topic
+2021-10-25 12:44:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 489578047, "id": 1452533943182397440, "text": "@jnrUnderhood @mosh_im Php хорош, когда работает в связке с чем-то, но иногда и чистый тоже норм. Я перешел с java  на php и нифига не жалею", "createdAt": 1635146053000}' to topic='twitter-topic'
+2021-10-25 12:44:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Without vetrimaran your elumbu thevidiya is a shit🤭😩🤣 https://t.co/gAHubddU8u sending to kafka topic twitter-topic
+2021-10-25 12:44:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1380085314169892870, "id": 1452533952762159111, "text": "Without vetrimaran your elumbu thevidiya is a shit🤭😩🤣 https://t.co/gAHubddU8u", "createdAt": 1635146055000}' to topic='twitter-topic'
+2021-10-25 12:44:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Java Code Geeks - https://t.co/1phKGv4VMa #java #javacodegeeks sending to kafka topic twitter-topic
+2021-10-25 12:44:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3343984264, "id": 1452533962069397506, "text": "Java Code Geeks - https://t.co/1phKGv4VMa #java #javacodegeeks", "createdAt": 1635146057000}' to topic='twitter-topic'
+2021-10-25 12:44:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:44:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 964373115441635328, "id": 1452533963927523334, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146058000}' to topic='twitter-topic'
+2021-10-25 12:44:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Randy_04_: Without vetrimaran your elumbu thevidiya is a shit🤭😩🤣 https://t.co/2y10xXrozj https://t.co/gAHubddU8u sending to kafka topic twitter-topic
+2021-10-25 12:44:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1277715645430468608, "id": 1452533975164018689, "text": "RT @Randy_04_: Without vetrimaran your elumbu thevidiya is a shit🤭😩🤣 https://t.co/2y10xXrozj https://t.co/gAHubddU8u", "createdAt": 1635146061000}' to topic='twitter-topic'
+2021-10-25 12:44:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Randy_04_: Without vetrimaran your elumbu thevidiya is a shit🤭😩🤣 https://t.co/2y10xXrozj https://t.co/gAHubddU8u sending to kafka topic twitter-topic
+2021-10-25 12:44:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1437728609909706753, "id": 1452533984169058308, "text": "RT @Randy_04_: Without vetrimaran your elumbu thevidiya is a shit🤭😩🤣 https://t.co/2y10xXrozj https://t.co/gAHubddU8u", "createdAt": 1635146063000}' to topic='twitter-topic'
+2021-10-25 12:44:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Sot fillon “Java për të Drejtat e Viktimave të Krimit” https://t.co/UeuQngXdMu sending to kafka topic twitter-topic
+2021-10-25 12:44:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4419508948, "id": 1452533992180391941, "text": "Sot fillon \u201CJava për të Drejtat e Viktimave të Krimit\u201D https://t.co/UeuQngXdMu", "createdAt": 1635146065000}' to topic='twitter-topic'
+2021-10-25 12:44:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Nosferalis: J'ai toujours été fasciné par les cycles de sommeil de Franz Kafka: deux heures le matin, trois heures l'après-midi. Balzac… sending to kafka topic twitter-topic
+2021-10-25 12:44:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 977494436061110272, "id": 1452533995883966466, "text": "RT @Nosferalis: J'ai toujours été fasciné par les cycles de sommeil de Franz Kafka: deux heures le matin, trois heures l'après-midi. Balzac\u2026", "createdAt": 1635146066000}' to topic='twitter-topic'
+2021-10-25 12:44:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Missz_Jay If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:44:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534001076514819, "text": "@Missz_Jay If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146067000}' to topic='twitter-topic'
+2021-10-25 12:44:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Senior Java Developer в Intetics, Минск (Беларусь), Киев, Харьков, Одесса, Минск (Беларусь), удаленно https://t.co/G99QExwMD9 sending to kafka topic twitter-topic
+2021-10-25 12:44:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 508826314, "id": 1452534024983904256, "text": "Senior Java Developer в Intetics, Минск (Беларусь), Киев, Харьков, Одесса, Минск (Беларусь), удаленно https://t.co/G99QExwMD9", "createdAt": 1635146072000}' to topic='twitter-topic'
+2021-10-25 12:44:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @jmka711 More on C++ at front end ako e. Need to refresh pa uli ako sa java (almost 3 years nag work outside programming) hahaha sending to kafka topic twitter-topic
+2021-10-25 12:44:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452966870, "id": 1452534027508875267, "text": "@jmka711 More on C++ at front end ako e. Need to refresh pa uli ako sa java (almost 3 years nag work outside programming) hahaha", "createdAt": 1635146073000}' to topic='twitter-topic'
+2021-10-25 12:44:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @Missz_Jay If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on the… sending to kafka topic twitter-topic
+2021-10-25 12:44:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448297335126204421, "id": 1452534047700357121, "text": "RT @Geek00001: @Missz_Jay If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on the\u2026", "createdAt": 1635146078000}' to topic='twitter-topic'
+2021-10-25 12:44:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Java Code Geeks https://t.co/YRCAkYHLww sending to kafka topic twitter-topic
+2021-10-25 12:44:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 127391657, "id": 1452534047574568961, "text": "Java Code Geeks https://t.co/YRCAkYHLww", "createdAt": 1635146078000}' to topic='twitter-topic'
+2021-10-25 12:44:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text The latest The Java Tutorials! https://t.co/2TI9hjTuOK Thanks to @barsocchini #privacy #java sending to kafka topic twitter-topic
+2021-10-25 12:44:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4341727406, "id": 1452534053878513667, "text": "The latest The Java Tutorials! https://t.co/2TI9hjTuOK Thanks to @barsocchini #privacy #java", "createdAt": 1635146079000}' to topic='twitter-topic'
+2021-10-25 12:44:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Nadia40929721 @skaijackson If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:44:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534053937188864, "text": "@Nadia40929721 @skaijackson If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146079000}' to topic='twitter-topic'
+2021-10-25 12:44:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Randy_04_: Without vetrimaran your elumbu thevidiya is a shit🤭😩🤣 https://t.co/2y10xXrozj https://t.co/gAHubddU8u sending to kafka topic twitter-topic
+2021-10-25 12:44:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1252841479413723141, "id": 1452534058592972801, "text": "RT @Randy_04_: Without vetrimaran your elumbu thevidiya is a shit🤭😩🤣 https://t.co/2y10xXrozj https://t.co/gAHubddU8u", "createdAt": 1635146081000}' to topic='twitter-topic'
+2021-10-25 12:45:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @kashwilliamz @ifyouwereafo If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:45:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534121524248582, "text": "@kashwilliamz @ifyouwereafo If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146096000}' to topic='twitter-topic'
+2021-10-25 12:45:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Kasungwa_: Samosa za java jameni. Nikama ndizo zilitumika kufeed 5000 people .😪 sending to kafka topic twitter-topic
+2021-10-25 12:45:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1943683243, "id": 1452534142109954048, "text": "RT @Kasungwa_: Samosa za java jameni. Nikama ndizo zilitumika kufeed 5000 people .😪", "createdAt": 1635146100000}' to topic='twitter-topic'
+2021-10-25 12:45:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ランキング:3位 (家電)
+
+ワイヤレス イヤホン Bluetooth 5.2 FIPRIN 5719 ステレオ 最新版 iPhone7 8 x Plus 11 12 Android ......(16:15)
+
+https://t.co/QGMwWB4Ykt sending to kafka topic twitter-topic
+2021-10-25 12:45:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1367656120739762185, "id": 1452534151756746753, "text": "ランキング:3位 (家電)\n\nワイヤレス イヤホン Bluetooth 5.2 FIPRIN 5719 ステレオ 最新版 iPhone7 8 x Plus 11 12 Android ......(16:15)\n\nhttps://t.co/QGMwWB4Ykt", "createdAt": 1635146103000}' to topic='twitter-topic'
+2021-10-25 12:45:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ❗ランキング：8位❗ (無停電電源装置（UPS）)
+
+「UPS 常時商用 (正弦波) / 550VA/ 340W/ 縦型 BW55T」
+メーカ:OMRON
+
+価格:¥16,987(16:15)
+
+https://t.co/dBeRYFH3IT sending to kafka topic twitter-topic
+2021-10-25 12:45:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1375961552122044417, "id": 1452534151777689606, "text": "❗ランキング：8位❗ (無停電電源装置（UPS）)\n\n「UPS 常時商用 (正弦波) / 550VA/ 340W/ 縦型 BW55T」\nメーカ:OMRON\n\n価格:¥16,987(16:15)\n\nhttps://t.co/dBeRYFH3IT", "createdAt": 1635146103000}' to topic='twitter-topic'
+2021-10-25 12:45:17 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @KekePalmer If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:45:17 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534188276649984, "text": "@KekePalmer If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146111000}' to topic='twitter-topic'
+2021-10-25 12:45:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @DaizTm If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:45:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534240697008129, "text": "@DaizTm If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146124000}' to topic='twitter-topic'
+2021-10-25 12:45:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:45:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 985607800410734592, "id": 1452534261697949704, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146129000}' to topic='twitter-topic'
+2021-10-25 12:45:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej
+#BigData #Analytics #frontend #MachineLearning #Cy… sending to kafka topic twitter-topic
+2021-10-25 12:45:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1259929425048514560, "id": 1452534272007360515, "text": "RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej\n#BigData #Analytics #frontend #MachineLearning #Cy\u2026", "createdAt": 1635146131000}' to topic='twitter-topic'
+2021-10-25 12:45:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei… sending to kafka topic twitter-topic
+2021-10-25 12:45:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 828643413960642561, "id": 1452534275337773060, "text": "RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei\u2026", "createdAt": 1635146132000}' to topic='twitter-topic'
+2021-10-25 12:45:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej
+#BigData #Analytics #frontend #MachineLearning #Cy… sending to kafka topic twitter-topic
+2021-10-25 12:45:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1364497572509880322, "id": 1452534282958917635, "text": "RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej\n#BigData #Analytics #frontend #MachineLearning #Cy\u2026", "createdAt": 1635146134000}' to topic='twitter-topic'
+2021-10-25 12:45:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @suke_masa あらゆる操作をJava SDKで叩けば解決 sending to kafka topic twitter-topic
+2021-10-25 12:45:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5003551, "id": 1452534283915042819, "text": "@suke_masa あらゆる操作をJava SDKで叩けば解決", "createdAt": 1635146134000}' to topic='twitter-topic'
+2021-10-25 12:45:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej
+#BigData #Analytics #frontend #MachineLearning #Cy… sending to kafka topic twitter-topic
+2021-10-25 12:45:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452534293713068032, "text": "RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej\n#BigData #Analytics #frontend #MachineLearning #Cy\u2026", "createdAt": 1635146137000}' to topic='twitter-topic'
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej
+#BigData #Analytics #frontend #MachineLearning #Cy… sending to kafka topic twitter-topic
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1398866593237508100, "id": 1452534298003877890, "text": "RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej\n#BigData #Analytics #frontend #MachineLearning #Cy\u2026", "createdAt": 1635146138000}' to topic='twitter-topic'
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PDH_SciTechNews: #DataScience Predictive Analytics Market Key Factor For Growth Is Increasing Data Availability From Various Data Silos… sending to kafka topic twitter-topic
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1398866593237508100, "id": 1452534298125479940, "text": "RT @PDH_SciTechNews: #DataScience Predictive Analytics Market Key Factor For Growth Is Increasing Data Availability From Various Data Silos\u2026", "createdAt": 1635146138000}' to topic='twitter-topic'
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @DaizTm If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !… sending to kafka topic twitter-topic
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448297335126204421, "id": 1452534299601915908, "text": "RT @Geek00001: @DaizTm If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !\u2026", "createdAt": 1635146138000}' to topic='twitter-topic'
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej
+#BigData #Analytics #frontend #MachineLearning #Cy… sending to kafka topic twitter-topic
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448297335126204421, "id": 1452534299555680258, "text": "RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej\n#BigData #Analytics #frontend #MachineLearning #Cy\u2026", "createdAt": 1635146138000}' to topic='twitter-topic'
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:45:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 985607800410734592, "id": 1452534300084248578, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146138000}' to topic='twitter-topic'
+2021-10-25 12:45:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PDH_SciTechNews: #DataScience Predictive Analytics Market Key Factor For Growth Is Increasing Data Availability From Various Data Silos… sending to kafka topic twitter-topic
+2021-10-25 12:45:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452534319940083718, "text": "RT @PDH_SciTechNews: #DataScience Predictive Analytics Market Key Factor For Growth Is Increasing Data Availability From Various Data Silos\u2026", "createdAt": 1635146143000}' to topic='twitter-topic'
+2021-10-25 12:45:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ingliguori: #infographic: #LowCode Vs Traditional Coding
+Via @ingliguori
+#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Pyth… sending to kafka topic twitter-topic
+2021-10-25 12:45:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 842120626143911939, "id": 1452534323308007429, "text": "RT @ingliguori: #infographic: #LowCode Vs Traditional Coding\nVia @ingliguori\n#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Pyth\u2026", "createdAt": 1635146144000}' to topic='twitter-topic'
+2021-10-25 12:45:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text M5.0 Earthquake - south of Java, Indonesia
+
+Preliminary Report
+
+Magnitude5.0
+Date-Time25 Oct 2021  06:52:04 UTC25 Oct 2021  13:52:04 near epicenter24 Oct 2021  22:52:04 standard time in your timezone
+Location9.315S, 107.824E
+Depth10 km
+Distances218.0
+
+https://t.co/rktIHQfHoO sending to kafka topic twitter-topic
+2021-10-25 12:45:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1163867312677519363, "id": 1452534326567096324, "text": "M5.0 Earthquake - south of Java, Indonesia\n\nPreliminary Report\n\nMagnitude5.0\nDate-Time25 Oct 2021  06:52:04 UTC25 Oct 2021  13:52:04 near epicenter24 Oct 2021  22:52:04 standard time in your timezone\nLocation9.315S, 107.824E\nDepth10 km\nDistances218.0\n\nhttps://t.co/rktIHQfHoO", "createdAt": 1635146144000}' to topic='twitter-topic'
+2021-10-25 12:45:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej
+#BigData #Analytics #frontend #MachineLearning #Cy… sending to kafka topic twitter-topic
+2021-10-25 12:45:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1127829883013361665, "id": 1452534342471798785, "text": "RT @MdNureA39816744: Coloring book pages, contact me on #Fiverr: https://t.co/v3VG0el2ej\n#BigData #Analytics #frontend #MachineLearning #Cy\u2026", "createdAt": 1635146148000}' to topic='twitter-topic'
+2021-10-25 12:45:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ingliguori: #infographic: #LowCode Vs Traditional Coding
+Via @ingliguori
+#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Pyth… sending to kafka topic twitter-topic
+2021-10-25 12:45:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452534345265303554, "text": "RT @ingliguori: #infographic: #LowCode Vs Traditional Coding\nVia @ingliguori\n#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Pyth\u2026", "createdAt": 1635146149000}' to topic='twitter-topic'
+2021-10-25 12:45:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ingliguori: #infographic: #LowCode Vs Traditional Coding
+Via @ingliguori
+#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Pyth… sending to kafka topic twitter-topic
+2021-10-25 12:45:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452534345495838724, "text": "RT @ingliguori: #infographic: #LowCode Vs Traditional Coding\nVia @ingliguori\n#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Pyth\u2026", "createdAt": 1635146149000}' to topic='twitter-topic'
+2021-10-25 12:46:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:46:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 985607800410734592, "id": 1452534376852557826, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146156000}' to topic='twitter-topic'
+2021-10-25 12:46:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @ifyouwereafo If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:46:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534379553730560, "text": "@ifyouwereafo If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146157000}' to topic='twitter-topic'
+2021-10-25 12:46:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @D0MXNXQU3 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on the… sending to kafka topic twitter-topic
+2021-10-25 12:46:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3111536505, "id": 1452534400751742983, "text": "RT @Geek00001: @D0MXNXQU3 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on the\u2026", "createdAt": 1635146162000}' to topic='twitter-topic'
+2021-10-25 12:46:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:46:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534407076540417, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146164000}' to topic='twitter-topic'
+2021-10-25 12:46:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:46:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534407894421512, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146164000}' to topic='twitter-topic'
+2021-10-25 12:46:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:46:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534409303715840, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146164000}' to topic='twitter-topic'
+2021-10-25 12:46:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:46:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534409396060162, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146164000}' to topic='twitter-topic'
+2021-10-25 12:46:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @trisha_gee: Alright people. I "only" need 1000 more followers to hit 30k. Do I:
+- tweet more funny stuff
+- tweet more #Java stuff
+- sit… sending to kafka topic twitter-topic
+2021-10-25 12:46:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 19651211, "id": 1452534419206643714, "text": "RT @trisha_gee: Alright people. I \"only\" need 1000 more followers to hit 30k. Do I:\n- tweet more funny stuff\n- tweet more #Java stuff\n- sit\u2026", "createdAt": 1635146166000}' to topic='twitter-topic'
+2021-10-25 12:46:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bee_r_o: Nairobi is just one big crime scene. Get a software development deal. Hire a few campus kids doing computer science. Pay them… sending to kafka topic twitter-topic
+2021-10-25 12:46:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 388116837, "id": 1452534447589441538, "text": "RT @bee_r_o: Nairobi is just one big crime scene. Get a software development deal. Hire a few campus kids doing computer science. Pay them\u2026", "createdAt": 1635146173000}' to topic='twitter-topic'
+2021-10-25 12:46:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text えっと‥これ宣伝してもいいんやろか⁇ぼかしの薄さからいいってことなんやろか⁇
+みなさんみてね🥺✨ sending to kafka topic twitter-topic
+2021-10-25 12:46:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 110438677, "id": 1452534489754714112, "text": "えっと\u2025これ宣伝してもいいんやろか\u2047ぼかしの薄さからいいってことなんやろか\u2047\nみなさんみてね🥺✨", "createdAt": 1635146183000}' to topic='twitter-topic'
+2021-10-25 12:46:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Deopiniemaker: Wat te denken over een regering die verhindert dat burgemeesters hun bevolking beschermen?
+KAFKA
+Stop Vlaanderen.
+1 Belg… sending to kafka topic twitter-topic
+2021-10-25 12:46:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 517477928, "id": 1452534495828226049, "text": "RT @Deopiniemaker: Wat te denken over een regering die verhindert dat burgemeesters hun bevolking beschermen?\nKAFKA\nStop Vlaanderen.\n1 Belg\u2026", "createdAt": 1635146185000}' to topic='twitter-topic'
+2021-10-25 12:46:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JavaNewsWizard: Java Code Geeks - https://t.co/1phKGv4VMa #java #javacodegeeks sending to kafka topic twitter-topic
+2021-10-25 12:46:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 135145900, "id": 1452534498629980163, "text": "RT @JavaNewsWizard: Java Code Geeks - https://t.co/1phKGv4VMa #java #javacodegeeks", "createdAt": 1635146185000}' to topic='twitter-topic'
+2021-10-25 12:46:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text 👉 $42.49 👈
+Core Java Volume IFundamentals Core Series @iotcybersec24 
+
+#Core #Java #Volume #IFundamentals #Core #Series #cybersecurity #cybersecuritytips #cybersecuritynews #infosec #ethicalhacking 
+
+https://t.co/Xz8X0mWELq sending to kafka topic twitter-topic
+2021-10-25 12:46:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 943529062856822784, "id": 1452534520880660481, "text": "👉 $42.49 👈\nCore Java Volume IFundamentals Core Series @iotcybersec24 \n\n#Core #Java #Volume #IFundamentals #Core #Series #cybersecurity #cybersecuritytips #cybersecuritynews #infosec #ethicalhacking \n\nhttps://t.co/Xz8X0mWELq", "createdAt": 1635146191000}' to topic='twitter-topic'
+2021-10-25 12:46:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #… sending to kafka topic twitter-topic
+2021-10-25 12:46:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 769629395262771200, "id": 1452534533304332290, "text": "RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #\u2026", "createdAt": 1635146194000}' to topic='twitter-topic'
+2021-10-25 12:46:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bee_r_o: Nairobi is just one big crime scene. Get a software development deal. Hire a few campus kids doing computer science. Pay them… sending to kafka topic twitter-topic
+2021-10-25 12:46:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1445119960888512520, "id": 1452534542632427523, "text": "RT @bee_r_o: Nairobi is just one big crime scene. Get a software development deal. Hire a few campus kids doing computer science. Pay them\u2026", "createdAt": 1635146196000}' to topic='twitter-topic'
+2021-10-25 12:46:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #… sending to kafka topic twitter-topic
+2021-10-25 12:46:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448297335126204421, "id": 1452534551708852225, "text": "RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #\u2026", "createdAt": 1635146198000}' to topic='twitter-topic'
+2021-10-25 12:46:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #… sending to kafka topic twitter-topic
+2021-10-25 12:46:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452534555022434306, "text": "RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #\u2026", "createdAt": 1635146199000}' to topic='twitter-topic'
+2021-10-25 12:46:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @D0MXNXQU3 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on the… sending to kafka topic twitter-topic
+2021-10-25 12:46:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1260015280048222208, "id": 1452534563327127554, "text": "RT @Geek00001: @D0MXNXQU3 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on the\u2026", "createdAt": 1635146201000}' to topic='twitter-topic'
+2021-10-25 12:47:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:47:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534646403735558, "text": "@KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146221000}' to topic='twitter-topic'
+2021-10-25 12:47:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @realprettyygirl If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As… sending to kafka topic twitter-topic
+2021-10-25 12:47:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3111536505, "id": 1452534655698223105, "text": "RT @Geek00001: @realprettyygirl If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As\u2026", "createdAt": 1635146223000}' to topic='twitter-topic'
+2021-10-25 12:47:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text は〜〜〜〜〜、javaのエラーコードだ〜〜〜〜w sending to kafka topic twitter-topic
+2021-10-25 12:47:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2453254976, "id": 1452534661524058114, "text": "は〜〜〜〜〜、javaのエラーコードだ〜〜〜〜w", "createdAt": 1635146224000}' to topic='twitter-topic'
+2021-10-25 12:47:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei… sending to kafka topic twitter-topic
+2021-10-25 12:47:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1373361873333202955, "id": 1452534677605076992, "text": "RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei\u2026", "createdAt": 1635146228000}' to topic='twitter-topic'
+2021-10-25 12:47:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:47:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1308848668645060609, "id": 1452534705107075076, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146235000}' to topic='twitter-topic'
+2021-10-25 12:47:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Frink 2021-10-23 (Donationware) - A Java based application for macOS that enables you to make various calculations and perform conversions via a simple, unsophisticated user interface #Mac https://t.co/XvUa1E7LLM sending to kafka topic twitter-topic
+2021-10-25 12:47:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 583590987, "id": 1452534742201536516, "text": "Frink 2021-10-23 (Donationware) - A Java based application for macOS that enables you to make various calculations and perform conversions via a simple, unsophisticated user interface #Mac https://t.co/XvUa1E7LLM", "createdAt": 1635146243000}' to topic='twitter-topic'
+2021-10-25 12:47:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @_KingJones___ If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:47:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534744500015105, "text": "@_KingJones___ If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146244000}' to topic='twitter-topic'
+2021-10-25 12:47:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @_KingJones___ If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on… sending to kafka topic twitter-topic
+2021-10-25 12:47:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452229467653476355, "id": 1452534750892146688, "text": "RT @Geek00001: @_KingJones___ If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on\u2026", "createdAt": 1635146246000}' to topic='twitter-topic'
+2021-10-25 12:47:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:47:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452229467653476355, "id": 1452534757783396358, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146247000}' to topic='twitter-topic'
+2021-10-25 12:47:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:47:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1330350611796209666, "id": 1452534779719655424, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146252000}' to topic='twitter-topic'
+2021-10-25 12:47:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:47:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1364497572509880322, "id": 1452534786824843267, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146254000}' to topic='twitter-topic'
+2021-10-25 12:47:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ACLU: Sir Lady Java is a Black transgender activist and performer who organized public protests, fighting for the rights of the Los Ang… sending to kafka topic twitter-topic
+2021-10-25 12:47:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 106512310, "id": 1452534801848627200, "text": "RT @ACLU: Sir Lady Java is a Black transgender activist and performer who organized public protests, fighting for the rights of the Los Ang\u2026", "createdAt": 1635146258000}' to topic='twitter-topic'
+2021-10-25 12:47:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:47:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448297335126204421, "id": 1452534803518136320, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146258000}' to topic='twitter-topic'
+2021-10-25 12:47:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:47:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1127829883013361665, "id": 1452534845985460229, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146268000}' to topic='twitter-topic'
+2021-10-25 12:47:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:47:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1260015280048222208, "id": 1452534865333719047, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146273000}' to topic='twitter-topic'
+2021-10-25 12:48:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @DigitalogyCorp: Super Helpful CSS Layout Generators....
+
+#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs… sending to kafka topic twitter-topic
+2021-10-25 12:48:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 983535377674891266, "id": 1452534890197655558, "text": "RT @DigitalogyCorp: Super Helpful CSS Layout Generators....\n\n#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs\u2026", "createdAt": 1635146279000}' to topic='twitter-topic'
+2021-10-25 12:48:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ボスがJavaを使ってレガシーな構成で動かしたそうだけど，サポートしたくないが？？？ sending to kafka topic twitter-topic
+2021-10-25 12:48:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 218025215, "id": 1452534893410324481, "text": "ボスがJavaを使ってレガシーな構成で動かしたそうだけど，サポートしたくないが？？？", "createdAt": 1635146280000}' to topic='twitter-topic'
+2021-10-25 12:48:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ❗ランキング：9位❗(無停電電源装置（UPS）)
+
+「APC ES 550 無償保証期間：2年間 BE550M1-JPE」
+メーカ:SchneiderElectricJapan
+
+価格:¥10,980✨
+🔥売り切れ間近🔥(16:18)
+
+https://t.co/QarPDdnDOC sending to kafka topic twitter-topic
+2021-10-25 12:48:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1375961552122044417, "id": 1452534909222879233, "text": "❗ランキング：9位❗(無停電電源装置（UPS）)\n\n「APC ES 550 無償保証期間：2年間 BE550M1-JPE」\nメーカ:SchneiderElectricJapan\n\n価格:¥10,980✨\n🔥売り切れ間近🔥(16:18)\n\nhttps://t.co/QarPDdnDOC", "createdAt": 1635146283000}' to topic='twitter-topic'
+2021-10-25 12:48:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @DigitalogyCorp: Super Helpful CSS Layout Generators....
+
+#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs… sending to kafka topic twitter-topic
+2021-10-25 12:48:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452534911706017792, "text": "RT @DigitalogyCorp: Super Helpful CSS Layout Generators....\n\n#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs\u2026", "createdAt": 1635146284000}' to topic='twitter-topic'
+2021-10-25 12:48:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @DigitalogyCorp: Super Helpful CSS Layout Generators....
+
+#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs… sending to kafka topic twitter-topic
+2021-10-25 12:48:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1337430590241562626, "id": 1452534912167317507, "text": "RT @DigitalogyCorp: Super Helpful CSS Layout Generators....\n\n#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs\u2026", "createdAt": 1635146284000}' to topic='twitter-topic'
+2021-10-25 12:48:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @urNightmaresgf @Bratz If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:48:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534921789157376, "text": "@urNightmaresgf @Bratz If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146286000}' to topic='twitter-topic'
+2021-10-25 12:48:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text なんか一通り学習し終えたので自分の中で一段落ついた感じです。でもJava使える?と訊かれたら使えるとは答えられないので、まだまだ勉強が必要です。本を読みつつ、模写コーディングしつつ、何かアプリケーションを作ってみないといけません。アプリ作るならまずは設計から始めようかな。 sending to kafka topic twitter-topic
+2021-10-25 12:48:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 83857486, "id": 1452534923621900292, "text": "なんか一通り学習し終えたので自分の中で一段落ついた感じです。でもJava使える?と訊かれたら使えるとは答えられないので、まだまだ勉強が必要です。本を読みつつ、模写コーディングしつつ、何かアプリケーションを作ってみないといけません。アプリ作るならまずは設計から始めようかな。", "createdAt": 1635146287000}' to topic='twitter-topic'
+2021-10-25 12:48:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @miyatasatoko: えっと‥これ宣伝してもいいんやろか⁇ぼかしの薄さからいいってことなんやろか⁇
+みなさんみてね🥺✨ sending to kafka topic twitter-topic
+2021-10-25 12:48:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1287682060774027265, "id": 1452534928449544199, "text": "RT @miyatasatoko: えっと\u2025これ宣伝してもいいんやろか\u2047ぼかしの薄さからいいってことなんやろか\u2047\nみなさんみてね🥺✨", "createdAt": 1635146288000}' to topic='twitter-topic'
+2021-10-25 12:48:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @PlECEOFM1ND If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:48:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452534975601983488, "text": "@PlECEOFM1ND If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146299000}' to topic='twitter-topic'
+2021-10-25 12:48:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Coditation Systems - Backend Engineer - Java/Spring Boot/Hibernate (2-5 yrs) | https://t.co/nSnyPqdaAR #hirist sending to kafka topic twitter-topic
+2021-10-25 12:48:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 856045103475040257, "id": 1452534977350889480, "text": "Coditation Systems - Backend Engineer - Java/Spring Boot/Hibernate (2-5 yrs) | https://t.co/nSnyPqdaAR #hirist", "createdAt": 1635146300000}' to topic='twitter-topic'
+2021-10-25 12:48:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text 【プログラミング言語　JavaScriptとは？】
+ウェブページに動き（動的表現）をつけることができるスクリプト言語
+オブジェクト指向
+近年は、ゲームにも使われたりと応用範囲が広い
+JAVAとは全く関係なし！
+ブラウザに実行環境が搭載されている
+クライアントサイドで動く（即時性がある）
+#javascript sending to kafka topic twitter-topic
+2021-10-25 12:48:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1001715798304608256, "id": 1452534981134221316, "text": "【プログラミング言語　JavaScriptとは？】\nウェブページに動き（動的表現）をつけることができるスクリプト言語\nオブジェクト指向\n近年は、ゲームにも使われたりと応用範囲が広い\nJAVAとは全く関係なし！\nブラウザに実行環境が搭載されている\nクライアントサイドで動く（即時性がある）\n#javascript", "createdAt": 1635146300000}' to topic='twitter-topic'
+2021-10-25 12:48:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @PlECEOFM1ND If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:48:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534995487113217, "text": "RT @Geek00001: @PlECEOFM1ND If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146304000}' to topic='twitter-topic'
+2021-10-25 12:48:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @kansi_hs_eng: 【プログラミング言語　JavaScriptとは？】
+ウェブページに動き（動的表現）をつけることができるスクリプト言語
+オブジェクト指向
+近年は、ゲームにも使われたりと応用範囲が広い
+JAVAとは全く関係なし！
+ブラウザに実行環境が搭載されてい… sending to kafka topic twitter-topic
+2021-10-25 12:48:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534995432603651, "text": "RT @kansi_hs_eng: 【プログラミング言語　JavaScriptとは？】\nウェブページに動き（動的表現）をつけることができるスクリプト言語\nオブジェクト指向\n近年は、ゲームにも使われたりと応用範囲が広い\nJAVAとは全く関係なし！\nブラウザに実行環境が搭載されてい\u2026", "createdAt": 1635146304000}' to topic='twitter-topic'
+2021-10-25 12:48:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @DigitalogyCorp: Super Helpful CSS Layout Generators....
+
+#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs… sending to kafka topic twitter-topic
+2021-10-25 12:48:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534995914919936, "text": "RT @DigitalogyCorp: Super Helpful CSS Layout Generators....\n\n#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs\u2026", "createdAt": 1635146304000}' to topic='twitter-topic'
+2021-10-25 12:48:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @urNightmaresgf @Bratz If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straig… sending to kafka topic twitter-topic
+2021-10-25 12:48:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534997185810433, "text": "RT @Geek00001: @urNightmaresgf @Bratz If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straig\u2026", "createdAt": 1635146304000}' to topic='twitter-topic'
+2021-10-25 12:48:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:48:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534997412241408, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146304000}' to topic='twitter-topic'
+2021-10-25 12:48:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:48:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534997466767367, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146304000}' to topic='twitter-topic'
+2021-10-25 12:48:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:48:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452534997441601541, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146304000}' to topic='twitter-topic'
+2021-10-25 12:48:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #… sending to kafka topic twitter-topic
+2021-10-25 12:48:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 955443550048608257, "id": 1452535000826454016, "text": "RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #\u2026", "createdAt": 1635146305000}' to topic='twitter-topic'
+2021-10-25 12:48:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @DigitalogyCorp: Super Helpful CSS Layout Generators....
+
+#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs… sending to kafka topic twitter-topic
+2021-10-25 12:48:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 955443550048608257, "id": 1452535000935534597, "text": "RT @DigitalogyCorp: Super Helpful CSS Layout Generators....\n\n#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs\u2026", "createdAt": 1635146305000}' to topic='twitter-topic'
+2021-10-25 12:48:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text こないだ100匹以上狩ってやっと1個拾った。
+そして翌日データ吹っ飛んでなくなってた。
+
+ｳｶﾞｧｧｧ(´ﾟдﾟ｀) sending to kafka topic twitter-topic
+2021-10-25 12:48:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1127730978724540417, "id": 1452535002307055616, "text": "こないだ100匹以上狩ってやっと1個拾った。\nそして翌日データ吹っ飛んでなくなってた。\n\nｳｶﾞｧｧｧ(´ﾟдﾟ｀)", "createdAt": 1635146306000}' to topic='twitter-topic'
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @_KingJones___ If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on… sending to kafka topic twitter-topic
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1051649960, "id": 1452535008191827968, "text": "RT @Geek00001: @_KingJones___ If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on\u2026", "createdAt": 1635146307000}' to topic='twitter-topic'
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @urNightmaresgf @Bratz If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straig… sending to kafka topic twitter-topic
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1051649960, "id": 1452535008237965313, "text": "RT @Geek00001: @urNightmaresgf @Bratz If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straig\u2026", "createdAt": 1635146307000}' to topic='twitter-topic'
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @DigitalogyCorp: Super Helpful CSS Layout Generators....
+
+#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs… sending to kafka topic twitter-topic
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1051649960, "id": 1452535008288202752, "text": "RT @DigitalogyCorp: Super Helpful CSS Layout Generators....\n\n#javascript #js #angularjs #reactjs #angular #web #webdeveloper #html #css #cs\u2026", "createdAt": 1635146307000}' to topic='twitter-topic'
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @kansi_hs_eng: 【プログラミング言語　JavaScriptとは？】
+ウェブページに動き（動的表現）をつけることができるスクリプト言語
+オブジェクト指向
+近年は、ゲームにも使われたりと応用範囲が広い
+JAVAとは全く関係なし！
+ブラウザに実行環境が搭載されてい… sending to kafka topic twitter-topic
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1051649960, "id": 1452535008271421445, "text": "RT @kansi_hs_eng: 【プログラミング言語　JavaScriptとは？】\nウェブページに動き（動的表現）をつけることができるスクリプト言語\nオブジェクト指向\n近年は、ゲームにも使われたりと応用範囲が広い\nJAVAとは全く関係なし！\nブラウザに実行環境が搭載されてい\u2026", "createdAt": 1635146307000}' to topic='twitter-topic'
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #… sending to kafka topic twitter-topic
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1051649960, "id": 1452535008304959490, "text": "RT @FaysTechnology: #programming #coding #programmer #python #developer #technology #javascript #code #coder #java #computerscience #html #\u2026", "createdAt": 1635146307000}' to topic='twitter-topic'
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @PlECEOFM1ND If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1051649960, "id": 1452535008334319617, "text": "RT @Geek00001: @PlECEOFM1ND If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146307000}' to topic='twitter-topic'
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:48:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1051649960, "id": 1452535008334385156, "text": "RT @Geek00001: @KillahKey69 If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146307000}' to topic='twitter-topic'
+2021-10-25 12:48:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @literlandweb1: "Creer significa liberar en sí mismo lo indestructible; o mejor: liberarse; o mejor aún: ser indestructible; o mejor aún… sending to kafka topic twitter-topic
+2021-10-25 12:48:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 163542138, "id": 1452535016727138311, "text": "RT @literlandweb1: \"Creer significa liberar en sí mismo lo indestructible; o mejor: liberarse; o mejor aún: ser indestructible; o mejor aún\u2026", "createdAt": 1635146309000}' to topic='twitter-topic'
+2021-10-25 12:48:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text 転職活動している時にいつも頭によぎるのって面接が上手くいくかな〜ってこと。。←苦手な面接どうにかしていかないと...(T ^ T)
+#転職したい #java #プログラミング #相互フォロー sending to kafka topic twitter-topic
+2021-10-25 12:48:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1016600350080393217, "id": 1452535040898842625, "text": "転職活動している時にいつも頭によぎるのって面接が上手くいくかな〜ってこと。。←苦手な面接どうにかしていかないと...(T ^ T)\n#転職したい #java #プログラミング #相互フォロー", "createdAt": 1635146315000}' to topic='twitter-topic'
+2021-10-25 12:48:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @PlECEOFM1ND If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:48:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448297335126204421, "id": 1452535055570571265, "text": "RT @Geek00001: @PlECEOFM1ND If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146318000}' to topic='twitter-topic'
+2021-10-25 12:48:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PaolaToogoodxme: “Conosco abbastanza gli orrori della solitudine, non tanto della solitudine solitaria quanto della solitudine fra la g… sending to kafka topic twitter-topic
+2021-10-25 12:48:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1125079288506671104, "id": 1452535080514211842, "text": "RT @PaolaToogoodxme: \u201CConosco abbastanza gli orrori della solitudine, non tanto della solitudine solitaria quanto della solitudine fra la g\u2026", "createdAt": 1635146324000}' to topic='twitter-topic'
+2021-10-25 12:48:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @blackpearl_rec: Our client is looking for Java developers with experience in React and Node. If you have knowledge of AngularJS Framewo… sending to kafka topic twitter-topic
+2021-10-25 12:48:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1311904892076781568, "id": 1452535080891547652, "text": "RT @blackpearl_rec: Our client is looking for Java developers with experience in React and Node. If you have knowledge of AngularJS Framewo\u2026", "createdAt": 1635146324000}' to topic='twitter-topic'
+2021-10-25 12:48:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @miyatasatoko: えっと‥これ宣伝してもいいんやろか⁇ぼかしの薄さからいいってことなんやろか⁇
+みなさんみてね🥺✨ sending to kafka topic twitter-topic
+2021-10-25 12:48:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1397609440539418624, "id": 1452535086310510592, "text": "RT @miyatasatoko: えっと\u2025これ宣伝してもいいんやろか\u2047ぼかしの薄さからいいってことなんやろか\u2047\nみなさんみてね🥺✨", "createdAt": 1635146326000}' to topic='twitter-topic'
+2021-10-25 12:48:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @papusyolivus: "Por más que animes tanto como quieras a alguien que tienen los ojos vendados a mirar a través de la venda, no verá jamas… sending to kafka topic twitter-topic
+2021-10-25 12:48:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4823272749, "id": 1452535093365547010, "text": "RT @papusyolivus: \"Por más que animes tanto como quieras a alguien que tienen los ojos vendados a mirar a través de la venda, no verá jamas\u2026", "createdAt": 1635146327000}' to topic='twitter-topic'
+2021-10-25 12:48:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة
+Word
+Excel
+Powerpoint
+Acces
+Java
+Database قواعد بيانات
+للتواصل واتس اب
+http… sending to kafka topic twitter-topic
+2021-10-25 12:48:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 929000673651326976, "id": 1452535110163644428, "text": "RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة\nWord\nExcel\nPowerpoint\nAcces\nJava\nDatabase قواعد بيانات\nللتواصل واتس اب\nhttp\u2026", "createdAt": 1635146331000}' to topic='twitter-topic'
+2021-10-25 12:49:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Javaわかんないんだよなあ sending to kafka topic twitter-topic
+2021-10-25 12:49:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 218025215, "id": 1452535136273108996, "text": "Javaわかんないんだよなあ", "createdAt": 1635146337000}' to topic='twitter-topic'
+2021-10-25 12:49:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @miyatasatoko: えっと‥これ宣伝してもいいんやろか⁇ぼかしの薄さからいいってことなんやろか⁇
+みなさんみてね🥺✨ sending to kafka topic twitter-topic
+2021-10-25 12:49:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2911038433, "id": 1452535142497406980, "text": "RT @miyatasatoko: えっと\u2025これ宣伝してもいいんやろか\u2047ぼかしの薄さからいいってことなんやろか\u2047\nみなさんみてね🥺✨", "createdAt": 1635146339000}' to topic='twitter-topic'
+2021-10-25 12:49:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @SabahatttinAli: Biriyle uzun uzun tartışmak yerine "tamam haklısın" deyip geçmek daha mantıklı gelmeye başladı. Franz Kafka'nın da dedi… sending to kafka topic twitter-topic
+2021-10-25 12:49:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3939541293, "id": 1452535149787324424, "text": "RT @SabahatttinAli: Biriyle uzun uzun tartışmak yerine \"tamam haklısın\" deyip geçmek daha mantıklı gelmeye başladı. Franz Kafka'nın da dedi\u2026", "createdAt": 1635146341000}' to topic='twitter-topic'
+2021-10-25 12:49:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @blackxngelx If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:49:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452535164605714436, "text": "@blackxngelx If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146344000}' to topic='twitter-topic'
+2021-10-25 12:49:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text 一二三「JavaとJavaScriptってどう違うの？俺っちわかんねー」
+独歩「インドとインドネシアくらい違う」
+一二三「えっ、インドとインドネシアって違うの…」 sending to kafka topic twitter-topic
+2021-10-25 12:49:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1035915454391377920, "id": 1452535185262579715, "text": "一二三「JavaとJavaScriptってどう違うの？俺っちわかんねー」\n独歩「インドとインドネシアくらい違う」\n一二三「えっ、インドとインドネシアって違うの\u2026」", "createdAt": 1635146349000}' to topic='twitter-topic'
+2021-10-25 12:49:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text #earthquake  2021-10-25 06:52:04 (M5.0) south of Java, Indonesia -9.3 107.8 (1cbfb) https://t.co/wt6UT634em sending to kafka topic twitter-topic
+2021-10-25 12:49:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 121240066, "id": 1452535187078881281, "text": "#earthquake  2021-10-25 06:52:04 (M5.0) south of Java, Indonesia -9.3 107.8 (1cbfb) https://t.co/wt6UT634em", "createdAt": 1635146350000}' to topic='twitter-topic'
+2021-10-25 12:49:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @miyatasatoko: えっと‥これ宣伝してもいいんやろか⁇ぼかしの薄さからいいってことなんやろか⁇
+みなさんみてね🥺✨ sending to kafka topic twitter-topic
+2021-10-25 12:49:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1182807798, "id": 1452535212164878339, "text": "RT @miyatasatoko: えっと\u2025これ宣伝してもいいんやろか\u2047ぼかしの薄さからいいってことなんやろか\u2047\nみなさんみてね🥺✨", "createdAt": 1635146356000}' to topic='twitter-topic'
+2021-10-25 12:49:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @iTorianna If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:49:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452535218640932866, "text": "@iTorianna If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146357000}' to topic='twitter-topic'
+2021-10-25 12:49:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @CokeMenthol: Vente des bonbons🌿👇livraison dispo
+Télégram :https://t.co/XF1INtYKR1
+WhatsAp+33 7 53 50 93 68
+
+#LeCannabiste #Mmemberville… sending to kafka topic twitter-topic
+2021-10-25 12:49:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452533601212551168, "id": 1452535224055775234, "text": "RT @CokeMenthol: Vente des bonbons🌿👇livraison dispo\nTélégram :https://t.co/XF1INtYKR1\nWhatsAp+33 7 53 50 93 68\n\n#LeCannabiste #Mmemberville\u2026", "createdAt": 1635146358000}' to topic='twitter-topic'
+2021-10-25 12:49:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Read my latest: “Impostor Syndrome | MicroServices | new Kitten() 🐱 ” https://t.co/Gm9sHAZ0i9 sending to kafka topic twitter-topic
+2021-10-25 12:49:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2783986201, "id": 1452535230468956161, "text": "Read my latest: \u201CImpostor Syndrome | MicroServices | new Kitten() 🐱 \u201D https://t.co/Gm9sHAZ0i9", "createdAt": 1635146360000}' to topic='twitter-topic'
+2021-10-25 12:49:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @iTorianna If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on the… sending to kafka topic twitter-topic
+2021-10-25 12:49:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452229467653476355, "id": 1452535249775255552, "text": "RT @Geek00001: @iTorianna If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on the\u2026", "createdAt": 1635146365000}' to topic='twitter-topic'
+2021-10-25 12:49:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @blackxngelx If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:49:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452229467653476355, "id": 1452535252249890820, "text": "RT @Geek00001: @blackxngelx If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146365000}' to topic='twitter-topic'
+2021-10-25 12:49:33 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @miyatasatoko: えっと‥これ宣伝してもいいんやろか⁇ぼかしの薄さからいいってことなんやろか⁇
+みなさんみてね🥺✨ sending to kafka topic twitter-topic
+2021-10-25 12:49:33 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1224663004265861120, "id": 1452535262676852738, "text": "RT @miyatasatoko: えっと\u2025これ宣伝してもいいんやろか\u2047ぼかしの薄さからいいってことなんやろか\u2047\nみなさんみてね🥺✨", "createdAt": 1635146368000}' to topic='twitter-topic'
+2021-10-25 12:49:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @__zofinity If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:49:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452535271086563328, "text": "@__zofinity If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146370000}' to topic='twitter-topic'
+2021-10-25 12:49:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on th… sending to kafka topic twitter-topic
+2021-10-25 12:49:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1364497572509880322, "id": 1452535290514579457, "text": "RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on th\u2026", "createdAt": 1635146374000}' to topic='twitter-topic'
+2021-10-25 12:49:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on th… sending to kafka topic twitter-topic
+2021-10-25 12:49:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452229467653476355, "id": 1452535296998920196, "text": "RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on th\u2026", "createdAt": 1635146376000}' to topic='twitter-topic'
+2021-10-25 12:49:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on th… sending to kafka topic twitter-topic
+2021-10-25 12:49:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448297335126204421, "id": 1452535307350466562, "text": "RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on th\u2026", "createdAt": 1635146378000}' to topic='twitter-topic'
+2021-10-25 12:49:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @SreejithSugunan: "Truth, which is one of the few really great and precious things in life, cannot be bought. Man receives it as a gift,… sending to kafka topic twitter-topic
+2021-10-25 12:49:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1292088303139737607, "id": 1452535312299671554, "text": "RT @SreejithSugunan: \"Truth, which is one of the few really great and precious things in life, cannot be bought. Man receives it as a gift,\u2026", "createdAt": 1635146379000}' to topic='twitter-topic'
+2021-10-25 12:49:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @blackxngelx If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:49:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1260015280048222208, "id": 1452535318301880320, "text": "RT @Geek00001: @blackxngelx If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146381000}' to topic='twitter-topic'
+2021-10-25 12:49:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة
+Word
+Excel
+Powerpoint
+Acces
+Java
+Database قواعد بيانات
+للتواصل واتس اب
+http… sending to kafka topic twitter-topic
+2021-10-25 12:49:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 929000673651326976, "id": 1452535318650007558, "text": "RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة\nWord\nExcel\nPowerpoint\nAcces\nJava\nDatabase قواعد بيانات\nللتواصل واتس اب\nhttp\u2026", "createdAt": 1635146381000}' to topic='twitter-topic'
+2021-10-25 12:49:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @quakenotices: #earthquake  2021-10-25 06:52:04 (M5.0) south of Java, Indonesia -9.3 107.8 (1cbfb) https://t.co/wt6UT634em sending to kafka topic twitter-topic
+2021-10-25 12:49:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1202422507757875200, "id": 1452535322726785024, "text": "RT @quakenotices: #earthquake  2021-10-25 06:52:04 (M5.0) south of Java, Indonesia -9.3 107.8 (1cbfb) https://t.co/wt6UT634em", "createdAt": 1635146382000}' to topic='twitter-topic'
+2021-10-25 12:49:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei… sending to kafka topic twitter-topic
+2021-10-25 12:49:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1146135692608770048, "id": 1452535328405954566, "text": "RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei\u2026", "createdAt": 1635146383000}' to topic='twitter-topic'
+2021-10-25 12:49:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة
+Word
+Excel
+Powerpoint
+Acces
+Java
+Database قواعد بيانات
+للتواصل واتس اب
+http… sending to kafka topic twitter-topic
+2021-10-25 12:49:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 929000673651326976, "id": 1452535342121242626, "text": "RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة\nWord\nExcel\nPowerpoint\nAcces\nJava\nDatabase قواعد بيانات\nللتواصل واتس اب\nhttp\u2026", "createdAt": 1635146387000}' to topic='twitter-topic'
+2021-10-25 12:49:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on th… sending to kafka topic twitter-topic
+2021-10-25 12:49:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1127829883013361665, "id": 1452535349964677126, "text": "RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on th\u2026", "createdAt": 1635146388000}' to topic='twitter-topic'
+2021-10-25 12:49:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @knowprogram: Data Science Information 🔭
+
+Join YouTube Channel Learn Programming with Tutorials and Project Development:- https://t.co/3… sending to kafka topic twitter-topic
+2021-10-25 12:49:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2751816499, "id": 1452535353060044803, "text": "RT @knowprogram: Data Science Information 🔭\n\nJoin YouTube Channel Learn Programming with Tutorials and Project Development:- https://t.co/3\u2026", "createdAt": 1635146389000}' to topic='twitter-topic'
+2021-10-25 12:49:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @trisha_gee Difficult choice... funny Java stuff? https://t.co/vZZBFIn43a sending to kafka topic twitter-topic
+2021-10-25 12:49:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 154456790, "id": 1452535355354329088, "text": "@trisha_gee Difficult choice... funny Java stuff? https://t.co/vZZBFIn43a", "createdAt": 1635146390000}' to topic='twitter-topic'
+2021-10-25 12:49:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FestFilmKorea: Ini dia deretan film-film seru yang akan tayang di Korea Indonesia Film Festival 2021 di CGV Grand Indonesia dan Paris V… sending to kafka topic twitter-topic
+2021-10-25 12:49:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 92476849, "id": 1452535356159500292, "text": "RT @FestFilmKorea: Ini dia deretan film-film seru yang akan tayang di Korea Indonesia Film Festival 2021 di CGV Grand Indonesia dan Paris V\u2026", "createdAt": 1635146390000}' to topic='twitter-topic'
+2021-10-25 12:49:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @confluentinc: In this course on microservices, you'll learn how to leverage a cloud-native streaming platform for building modern appli… sending to kafka topic twitter-topic
+2021-10-25 12:49:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1386150300411703296, "id": 1452535362698420226, "text": "RT @confluentinc: In this course on microservices, you'll learn how to leverage a cloud-native streaming platform for building modern appli\u2026", "createdAt": 1635146391000}' to topic='twitter-topic'
+2021-10-25 12:50:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @lazy_doer @CatalinGhita4 @himattm @madona_syombua @deepwritescode IMO, one should learn Java, not only because it enables them to work on legacy projects, but it gives perspective as well, and helps understand the Kotlin code better.
+However, that's strictly just my opinion. sending to kafka topic twitter-topic
+2021-10-25 12:50:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 455677124, "id": 1452535389097398273, "text": "@lazy_doer @CatalinGhita4 @himattm @madona_syombua @deepwritescode IMO, one should learn Java, not only because it enables them to work on legacy projects, but it gives perspective as well, and helps understand the Kotlin code better.\nHowever, that's strictly just my opinion.", "createdAt": 1635146398000}' to topic='twitter-topic'
+2021-10-25 12:50:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text “Kafka, sen kimsin ya?!”
+https://t.co/LhzRkcJOhr
+Uğur Kutay yazdı https://t.co/p0UhUCDy1N sending to kafka topic twitter-topic
+2021-10-25 12:50:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 99620272, "id": 1452535397557444608, "text": "\u201CKafka, sen kimsin ya?!\u201D\nhttps://t.co/LhzRkcJOhr\nUğur Kutay yazdı https://t.co/p0UhUCDy1N", "createdAt": 1635146400000}' to topic='twitter-topic'
+2021-10-25 12:50:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofCode #DEVCommunity #Mobile #gamers #indiegames #gamedev #indiedev #indiegamedev #gamedevelopment #gamedesign #indiegame #mobilegaming #videogaming #gamer #gaming https://t.co/aAEJI0PhRu sending to kafka topic twitter-topic
+2021-10-25 12:50:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1332714745871421443, "id": 1452535397683273732, "text": "NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofCode #DEVCommunity #Mobile #gamers #indiegames #gamedev #indiedev #indiegamedev #gamedevelopment #gamedesign #indiegame #mobilegaming #videogaming #gamer #gaming https://t.co/aAEJI0PhRu", "createdAt": 1635146400000}' to topic='twitter-topic'
+2021-10-25 12:50:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text 【募集】プロジェクトマネージャー【事業拡大】
+
+🎀自社プロジェクト研究開発orプライム案件
+🎀案件選別
+🎀固定残業なし！！残業代＋業績賞与
+
+#エンジニア転職 #java #自社開発 #プライム案件 #ITエンジニア #APP #RPA #AWS #求人情報 #転職 #求人 #就活
+https://t.co/BnLtOWgK8u https://t.co/NLaRVPIwki sending to kafka topic twitter-topic
+2021-10-25 12:50:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1381862604310650881, "id": 1452535397603586048, "text": "【募集】プロジェクトマネージャー【事業拡大】\n\n🎀自社プロジェクト研究開発orプライム案件\n🎀案件選別\n🎀固定残業なし！！残業代＋業績賞与\n\n#エンジニア転職 #java #自社開発 #プライム案件 #ITエンジニア #APP #RPA #AWS #求人情報 #転職 #求人 #就活\nhttps://t.co/BnLtOWgK8u https://t.co/NLaRVPIwki", "createdAt": 1635146400000}' to topic='twitter-topic'
+2021-10-25 12:50:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Java Microservices Framework Lead at JPMorgan Chase Bank, N.A (Columbus, OH) https://t.co/q0VcyNsU0l #java sending to kafka topic twitter-topic
+2021-10-25 12:50:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 190626981, "id": 1452535404708630530, "text": "Java Microservices Framework Lead at JPMorgan Chase Bank, N.A (Columbus, OH) https://t.co/q0VcyNsU0l #java", "createdAt": 1635146401000}' to topic='twitter-topic'
+2021-10-25 12:50:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:50:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1386109685741260803, "id": 1452535408647098368, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146402000}' to topic='twitter-topic'
+2021-10-25 12:50:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ランキング:4位 (家電)
+
+【期間限定価格】25日23:59まで！Dyson Cyclone V10 Fluffy コードレス掃除機 SV12FF【フロアドック......(16:20)
+
+https://t.co/5CkQ8nHo2H sending to kafka topic twitter-topic
+2021-10-25 12:50:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1367656120739762185, "id": 1452535411910144002, "text": "ランキング:4位 (家電)\n\n【期間限定価格】25日23:59まで！Dyson Cyclone V10 Fluffy コードレス掃除機 SV12FF【フロアドック......(16:20)\n\nhttps://t.co/5CkQ8nHo2H", "createdAt": 1635146403000}' to topic='twitter-topic'
+2021-10-25 12:50:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @hashjenni If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on the… sending to kafka topic twitter-topic
+2021-10-25 12:50:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3111536505, "id": 1452535421825605638, "text": "RT @Geek00001: @hashjenni If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on the\u2026", "createdAt": 1635146406000}' to topic='twitter-topic'
+2021-10-25 12:50:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:50:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1336432915941474305, "id": 1452535426993070086, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146407000}' to topic='twitter-topic'
+2021-10-25 12:50:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bee_r_o: Nairobi is just one big crime scene. Get a software development deal. Hire a few campus kids doing computer science. Pay them… sending to kafka topic twitter-topic
+2021-10-25 12:50:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 405478022, "id": 1452535428846952448, "text": "RT @bee_r_o: Nairobi is just one big crime scene. Get a software development deal. Hire a few campus kids doing computer science. Pay them\u2026", "createdAt": 1635146407000}' to topic='twitter-topic'
+2021-10-25 12:50:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FestFilmKorea: Ini dia deretan film-film seru yang akan tayang di Korea Indonesia Film Festival 2021 di CGV Grand Indonesia dan Paris V… sending to kafka topic twitter-topic
+2021-10-25 12:50:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1398302686819270659, "id": 1452535432420499465, "text": "RT @FestFilmKorea: Ini dia deretan film-film seru yang akan tayang di Korea Indonesia Film Festival 2021 di CGV Grand Indonesia dan Paris V\u2026", "createdAt": 1635146408000}' to topic='twitter-topic'
+2021-10-25 12:50:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Portrait of a girl on the Bamboo Bridge at Ciwidey, West Java, Indonesia  #Building #Person #Human #Bridge #RopeBridge #SuspensionBridge #Travel #Place #Destination #Ciwidey #Indonesia #WestJava https://t.co/kRrqLgBEgv sending to kafka topic twitter-topic
+2021-10-25 12:50:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 266491246, "id": 1452535442071597056, "text": "Portrait of a girl on the Bamboo Bridge at Ciwidey, West Java, Indonesia  #Building #Person #Human #Bridge #RopeBridge #SuspensionBridge #Travel #Place #Destination #Ciwidey #Indonesia #WestJava https://t.co/kRrqLgBEgv", "createdAt": 1635146410000}' to topic='twitter-topic'
+2021-10-25 12:50:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @its___Denise: https://t.co/iWzjDw6vXk
+
+#WomenWhoCode #javascript #GirlsWhoCode #Ronaldo #messi #PyTorch #NFT #Python #programming #proj… sending to kafka topic twitter-topic
+2021-10-25 12:50:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1307355301549543435, "id": 1452535455606448129, "text": "RT @its___Denise: https://t.co/iWzjDw6vXk\n\n#WomenWhoCode #javascript #GirlsWhoCode #Ronaldo #messi #PyTorch #NFT #Python #programming #proj\u2026", "createdAt": 1635146414000}' to topic='twitter-topic'
+2021-10-25 12:50:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @miyatasatoko: えっと‥これ宣伝してもいいんやろか⁇ぼかしの薄さからいいってことなんやろか⁇
+みなさんみてね🥺✨ sending to kafka topic twitter-topic
+2021-10-25 12:50:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5669662, "id": 1452535465051971585, "text": "RT @miyatasatoko: えっと\u2025これ宣伝してもいいんやろか\u2047ぼかしの薄さからいいってことなんやろか\u2047\nみなさんみてね🥺✨", "createdAt": 1635146416000}' to topic='twitter-topic'
+2021-10-25 12:50:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:50:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2751816499, "id": 1452535475995123715, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146418000}' to topic='twitter-topic'
+2021-10-25 12:50:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @its___Denise: https://t.co/iWzjDw6vXk
+
+#WomenWhoCode #javascript #GirlsWhoCode #Ronaldo #messi #PyTorch #NFT #Python #programming #proj… sending to kafka topic twitter-topic
+2021-10-25 12:50:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452535477488295938, "text": "RT @its___Denise: https://t.co/iWzjDw6vXk\n\n#WomenWhoCode #javascript #GirlsWhoCode #Ronaldo #messi #PyTorch #NFT #Python #programming #proj\u2026", "createdAt": 1635146419000}' to topic='twitter-topic'
+2021-10-25 12:50:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @its___Denise: https://t.co/iWzjDw6vXk
+
+#WomenWhoCode #javascript #GirlsWhoCode #Ronaldo #messi #PyTorch #NFT #Python #programming #proj… sending to kafka topic twitter-topic
+2021-10-25 12:50:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1337430590241562626, "id": 1452535477941190660, "text": "RT @its___Denise: https://t.co/iWzjDw6vXk\n\n#WomenWhoCode #javascript #GirlsWhoCode #Ronaldo #messi #PyTorch #NFT #Python #programming #proj\u2026", "createdAt": 1635146419000}' to topic='twitter-topic'
+2021-10-25 12:50:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text java行けるわ sending to kafka topic twitter-topic
+2021-10-25 12:50:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1439176471453462529, "id": 1452535481053302784, "text": "java行けるわ", "createdAt": 1635146420000}' to topic='twitter-topic'
+2021-10-25 12:50:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة
+Word
+Excel
+Powerpoint
+Acces
+Java
+Database قواعد بيانات
+للتواصل واتس اب
+http… sending to kafka topic twitter-topic
+2021-10-25 12:50:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1216844316536188929, "id": 1452535494961684485, "text": "RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة\nWord\nExcel\nPowerpoint\nAcces\nJava\nDatabase قواعد بيانات\nللتواصل واتس اب\nhttp\u2026", "createdAt": 1635146423000}' to topic='twitter-topic'
+2021-10-25 12:50:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Vue.jsやPHPやJAVAなどで月給80万円ほどで、募集をかけている方がいらっしゃいますが、普通の人はそこまで高スキルな事は出来ません。なぜならサーバーを管理できる人は少数だからです。半額で良いので「未経験・在宅可で年齢不問、TSやNestJSで高額可」にしてください。 sending to kafka topic twitter-topic
+2021-10-25 12:50:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1128415076875100160, "id": 1452535497209823232, "text": "Vue.jsやPHPやJAVAなどで月給80万円ほどで、募集をかけている方がいらっしゃいますが、普通の人はそこまで高スキルな事は出来ません。なぜならサーバーを管理できる人は少数だからです。半額で良いので「未経験・在宅可で年齢不問、TSやNestJSで高額可」にしてください。", "createdAt": 1635146423000}' to topic='twitter-topic'
+2021-10-25 12:50:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on th… sending to kafka topic twitter-topic
+2021-10-25 12:50:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 955443550048608257, "id": 1452535504755326984, "text": "RT @Geek00001: @__zofinity If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on th\u2026", "createdAt": 1635146425000}' to topic='twitter-topic'
+2021-10-25 12:50:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @its___Denise: https://t.co/iWzjDw6vXk
+
+#WomenWhoCode #javascript #GirlsWhoCode #Ronaldo #messi #PyTorch #NFT #Python #programming #proj… sending to kafka topic twitter-topic
+2021-10-25 12:50:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452229467653476355, "id": 1452535523021672451, "text": "RT @its___Denise: https://t.co/iWzjDw6vXk\n\n#WomenWhoCode #javascript #GirlsWhoCode #Ronaldo #messi #PyTorch #NFT #Python #programming #proj\u2026", "createdAt": 1635146430000}' to topic='twitter-topic'
+2021-10-25 12:50:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FestFilmKorea: Ini dia deretan film-film seru yang akan tayang di Korea Indonesia Film Festival 2021 di CGV Grand Indonesia dan Paris V… sending to kafka topic twitter-topic
+2021-10-25 12:50:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2428603202, "id": 1452535530109898753, "text": "RT @FestFilmKorea: Ini dia deretan film-film seru yang akan tayang di Korea Indonesia Film Festival 2021 di CGV Grand Indonesia dan Paris V\u2026", "createdAt": 1635146431000}' to topic='twitter-topic'
+2021-10-25 12:50:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text #FTSE #TRD (software house developing in #JavaScript #csharp #react #angularJS #Microsoft gold partner, #java, #SharePoint  etc)
+Results end of Nov. 
+Nice open this morning. sending to kafka topic twitter-topic
+2021-10-25 12:50:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2783814289, "id": 1452535589711011847, "text": "#FTSE #TRD (software house developing in #JavaScript #csharp #react #angularJS #Microsoft gold partner, #java, #SharePoint  etc)\nResults end of Nov. \nNice open this morning.", "createdAt": 1635146446000}' to topic='twitter-topic'
+2021-10-25 12:50:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:50:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1265019460374507521, "id": 1452535591426527238, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146446000}' to topic='twitter-topic'
+2021-10-25 12:50:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text こういうときjavaの知識パッケージをインストールして済む世界になりたい sending to kafka topic twitter-topic
+2021-10-25 12:50:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2453254976, "id": 1452535602503503872, "text": "こういうときjavaの知識パッケージをインストールして済む世界になりたい", "createdAt": 1635146449000}' to topic='twitter-topic'
+2021-10-25 12:50:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:50:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1374636733682229248, "id": 1452535602956570628, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146449000}' to topic='twitter-topic'
+2021-10-25 12:50:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Glad to stream #tweets to #kafka via #springboot #java #microservices app. Fun playing with #kafka #Docker #Kubernetes https://t.co/Kk5HSuLNgO sending to kafka topic twitter-topic
+2021-10-25 12:50:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 118487692, "id": 1452535610980245509, "text": "Glad to stream #tweets to #kafka via #springboot #java #microservices app. Fun playing with #kafka #Docker #Kubernetes https://t.co/Kk5HSuLNgO", "createdAt": 1635146451000}' to topic='twitter-topic'
+2021-10-25 12:50:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @brightsuit: #FTSE #TRD (software house developing in #JavaScript #csharp #react #angularJS #Microsoft gold partner, #java, #SharePoint… sending to kafka topic twitter-topic
+2021-10-25 12:50:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1437728609909706753, "id": 1452535621243719685, "text": "RT @brightsuit: #FTSE #TRD (software house developing in #JavaScript #csharp #react #angularJS #Microsoft gold partner, #java, #SharePoint\u2026", "createdAt": 1635146453000}' to topic='twitter-topic'
+2021-10-25 12:50:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @brightsuit: #FTSE #TRD (software house developing in #JavaScript #csharp #react #angularJS #Microsoft gold partner, #java, #SharePoint… sending to kafka topic twitter-topic
+2021-10-25 12:50:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 411419084, "id": 1452535621507960834, "text": "RT @brightsuit: #FTSE #TRD (software house developing in #JavaScript #csharp #react #angularJS #Microsoft gold partner, #java, #SharePoint\u2026", "createdAt": 1635146453000}' to topic='twitter-topic'
+2021-10-25 12:51:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @papusyolivus: "Por más que animes tanto como quieras a alguien que tienen los ojos vendados a mirar a través de la venda, no verá jamas… sending to kafka topic twitter-topic
+2021-10-25 12:51:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7030912, "id": 1452535634732662792, "text": "RT @papusyolivus: \"Por más que animes tanto como quieras a alguien que tienen los ojos vendados a mirar a través de la venda, no verá jamas\u2026", "createdAt": 1635146456000}' to topic='twitter-topic'
+2021-10-25 12:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ❗ランキング：10位❗ (無停電電源装置（UPS）)
+
+「APC ES 425 無償保証期間：2年間 BE425M-JP-E」
+メーカ:SchneiderElectricJapan
+
+価格:¥5,780(16:21)
+
+https://t.co/Qh1t9e8Q1D sending to kafka topic twitter-topic
+2021-10-25 12:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1375961552122044417, "id": 1452535662427533315, "text": "❗ランキング：10位❗ (無停電電源装置（UPS）)\n\n「APC ES 425 無償保証期間：2年間 BE425M-JP-E」\nメーカ:SchneiderElectricJapan\n\n価格:¥5,780(16:21)\n\nhttps://t.co/Qh1t9e8Q1D", "createdAt": 1635146463000}' to topic='twitter-topic'
+2021-10-25 12:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1139186989733990401, "id": 1452535663442767873, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146463000}' to topic='twitter-topic'
+2021-10-25 12:51:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text C’est un script java mdrrr sending to kafka topic twitter-topic
+2021-10-25 12:51:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 860617076402245633, "id": 1452535672636682242, "text": "C\u2019est un script java mdrrr", "createdAt": 1635146465000}' to topic='twitter-topic'
+2021-10-25 12:51:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geek00001: @skaijackson If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on t… sending to kafka topic twitter-topic
+2021-10-25 12:51:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3111536505, "id": 1452535675551637506, "text": "RT @Geek00001: @skaijackson If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on t\u2026", "createdAt": 1635146466000}' to topic='twitter-topic'
+2021-10-25 12:51:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Fati juaj sipas Yjeve : Java nis me fat për këto shenja, parashikimi i yjeve për sot https://t.co/0sKl9fXexX  | #shqip #shqiperi #kosova #albania #kosovo #shqiptar #shqiptare #lajme #shqiperia #tirana #prishtina #visitalbania #albanian #tirane #albaniangirl #shqipe #kuqezi  #sh… sending to kafka topic twitter-topic
+2021-10-25 12:51:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 590909006, "id": 1452535687652196359, "text": "Fati juaj sipas Yjeve : Java nis me fat për këto shenja, parashikimi i yjeve për sot https://t.co/0sKl9fXexX  | #shqip #shqiperi #kosova #albania #kosovo #shqiptar #shqiptare #lajme #shqiperia #tirana #prishtina #visitalbania #albanian #tirane #albaniangirl #shqipe #kuqezi  #sh\u2026", "createdAt": 1635146469000}' to topic='twitter-topic'
+2021-10-25 12:51:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة
+Word
+Excel
+Powerpoint
+Acces
+Java
+Database قواعد بيانات
+للتواصل واتس اب
+http… sending to kafka topic twitter-topic
+2021-10-25 12:51:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1216844316536188929, "id": 1452535687811682308, "text": "RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة\nWord\nExcel\nPowerpoint\nAcces\nJava\nDatabase قواعد بيانات\nللتواصل واتس اب\nhttp\u2026", "createdAt": 1635146469000}' to topic='twitter-topic'
+2021-10-25 12:51:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @naatxxs If your Math, Geography and Sciences classes are whooping your ‘ss then I got you
+
+I’m betting straight As on them !! 
+
+#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI sending to kafka topic twitter-topic
+2021-10-25 12:51:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937835094550695936, "id": 1452535691947266049, "text": "@naatxxs If your Math, Geography and Sciences classes are whooping your \u2018ss then I got you\n\nI\u2019m betting straight As on them !! \n\n#RTXOn #art #javascript #DataScience #programming #100DaysOfCode #Java #Linux #Memes  #art #arte #technology #gamer #Android #nature #gaming #photography #AI", "createdAt": 1635146470000}' to topic='twitter-topic'
+2021-10-25 12:51:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة
+Word
+Excel
+Powerpoint
+Acces
+Java
+Database قواعد بيانات
+للتواصل واتس اب
+http… sending to kafka topic twitter-topic
+2021-10-25 12:51:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1216844316536188929, "id": 1452535707671662596, "text": "RT @photoshop1132: لحل واجبات الحاسب الآلي وتنفيذ المشاريع بدقة\nWord\nExcel\nPowerpoint\nAcces\nJava\nDatabase قواعد بيانات\nللتواصل واتس اب\nhttp\u2026", "createdAt": 1635146474000}' to topic='twitter-topic'
+2021-10-25 12:51:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei… sending to kafka topic twitter-topic
+2021-10-25 12:51:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1320436324562817026, "id": 1452535708313391104, "text": "RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei\u2026", "createdAt": 1635146474000}' to topic='twitter-topic'
+2021-10-25 12:51:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text “Her şeyi yanlış yorumluyorsunuz, suskunluğu bile.” 
+
+Franz Kafka, Şato sending to kafka topic twitter-topic
+2021-10-25 12:51:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 708358751, "id": 1452535716974563328, "text": "\u201CHer şeyi yanlış yorumluyorsunuz, suskunluğu bile.\u201D \n\nFranz Kafka, Şato", "createdAt": 1635146476000}' to topic='twitter-topic'
+2021-10-25 12:51:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:51:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1375118156960837632, "id": 1452535719373778944, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146476000}' to topic='twitter-topic'
+2021-10-25 12:51:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei… sending to kafka topic twitter-topic
+2021-10-25 12:51:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 841768687245918208, "id": 1452535722666250241, "text": "RT @behro4: Seit 1,5 Jahren fühle ich mich als würde ich in einem Roman leben den Franz Kafka und George Orwell in einer Gemeinschaftsarbei\u2026", "createdAt": 1635146477000}' to topic='twitter-topic'
+2021-10-25 12:51:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:51:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1330350611796209666, "id": 1452535741331001347, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146482000}' to topic='twitter-topic'
+2021-10-25 12:51:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @HusniyePektas: “Her şeyi yanlış yorumluyorsunuz, suskunluğu bile.” 
+
+Franz Kafka, Şato sending to kafka topic twitter-topic
+2021-10-25 12:51:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4274468903, "id": 1452535759760728066, "text": "RT @HusniyePektas: \u201CHer şeyi yanlış yorumluyorsunuz, suskunluğu bile.\u201D \n\nFranz Kafka, Şato", "createdAt": 1635146486000}' to topic='twitter-topic'
+2021-10-25 12:51:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDJMv4h
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC… sending to kafka topic twitter-topic
+2021-10-25 12:51:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1260015280048222208, "id": 1452535771299258377, "text": "RT @JobPreference: NEED a JOB?\nSign up now https://t.co/rMErDJMv4h\nNO MIDDLEMAN. FREE OF CHARGE\n#Job #Java #Programming #Coding #100DaysofC\u2026", "createdAt": 1635146489000}' to topic='twitter-topic'
+2021-10-25 12:51:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @moonareas kafka sending to kafka topic twitter-topic
+2021-10-25 12:51:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1431935410368770049, "id": 1452535787640143876, "text": "@moonareas kafka", "createdAt": 1635146493000}' to topic='twitter-topic'
+2021-10-25 12:51:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @javadevjournal: QuickSort Algorithm https://t.co/Nd2jaivPFt #java #springframework #rest #springboot #springmvc sending to kafka topic twitter-topic
+2021-10-25 12:51:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 567559434, "id": 1452535802022424576, "text": "RT @javadevjournal: QuickSort Algorithm https://t.co/Nd2jaivPFt #java #springframework #rest #springboot #springmvc", "createdAt": 1635146496000}' to topic='twitter-topic'
+2021-10-25 12:51:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigdata #informationsecurity #businessintelligence #angularjs #infosec #NodeJS #developer #nosql #devjobs #DevOps #CyberSecurity  #webapi #remoteworking https://t.co/ueg5XZVWG3 sending to kafka topic twitter-topic
+2021-10-25 12:51:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2219874102, "id": 1452535805696688129, "text": "Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigdata #informationsecurity #businessintelligence #angularjs #infosec #NodeJS #developer #nosql #devjobs #DevOps #CyberSecurity  #webapi #remoteworking https://t.co/ueg5XZVWG3", "createdAt": 1635146497000}' to topic='twitter-topic'
+2021-10-25 12:51:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ErinAssociates: Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigd… sending to kafka topic twitter-topic
+2021-10-25 12:51:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448297335126204421, "id": 1452535811069644801, "text": "RT @ErinAssociates: Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigd\u2026", "createdAt": 1635146498000}' to topic='twitter-topic'
+2021-10-25 12:51:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ErinAssociates: Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigd… sending to kafka topic twitter-topic
+2021-10-25 12:51:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452535827662258180, "text": "RT @ErinAssociates: Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigd\u2026", "createdAt": 1635146502000}' to topic='twitter-topic'
+2021-10-25 12:51:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ErinAssociates: Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigd… sending to kafka topic twitter-topic
+2021-10-25 12:51:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1452246467096285193, "id": 1452535836633935872, "text": "RT @ErinAssociates: Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigd\u2026", "createdAt": 1635146504000}' to topic='twitter-topic'
+2021-10-25 12:51:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @javinpaul: “How to find first recurring character in given String? [Solved] [Google Interview Coding Problem]” https://t.co/A03vi9R4t2… sending to kafka topic twitter-topic
+2021-10-25 12:51:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 567559434, "id": 1452535846347755524, "text": "RT @javinpaul: \u201CHow to find first recurring character in given String? [Solved] [Google Interview Coding Problem]\u201D https://t.co/A03vi9R4t2\u2026", "createdAt": 1635146507000}' to topic='twitter-topic'
+2021-10-25 12:51:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ErinAssociates: Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigd… sending to kafka topic twitter-topic
+2021-10-25 12:51:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1238709740777037824, "id": 1452535860650446853, "text": "RT @ErinAssociates: Morning!! Please have a look at our latest roles at  https://t.co/p8qzmypxd8 #PHP #dotnet #Csharp #java #DBA #SQL #bigd\u2026", "createdAt": 1635146510000}' to topic='twitter-topic'
+2021-10-25 12:52:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ランキング:10位 「オフィスサプライ・OA機器」 (16:22)
+
+brother 【2021年10月12日発売】 純正インクカートリッジ4色パック LC411-4PK
+
+価格:4,130円🔥
+
+https://t.co/AJZeFiKbLt sending to kafka topic twitter-topic
+2021-10-25 12:52:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1371493492640256011, "id": 1452535914614325249, "text": "ランキング:10位 「オフィスサプライ・OA機器」 (16:22)\n\nbrother 【2021年10月12日発売】 純正インクカートリッジ4色パック LC411-4PK\n\n価格:4,130円🔥\n\nhttps://t.co/AJZeFiKbLt", "createdAt": 1635146523000}' to topic='twitter-topic'
+2021-10-25 12:52:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text #CyberSecurity Asia Pacific Businesses Identify Zero Trust as Key to Addressing Increasing Cyber Attacks and Flexible Workforces - Business Wire https://t.co/v7gVhjwtJW >> #hacking #security #malware #cyberattack  #DataProtection #coding #infosec #ethicalhacking #java #python sending to kafka topic twitter-topic
+2021-10-25 12:52:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 738752276836306944, "id": 1452535935434960901, "text": "#CyberSecurity Asia Pacific Businesses Identify Zero Trust as Key to Addressing Increasing Cyber Attacks and Flexible Workforces - Business Wire https://t.co/v7gVhjwtJW >> #hacking #security #malware #cyberattack  #DataProtection #coding #infosec #ethicalhacking #java #python", "createdAt": 1635146528000}' to topic='twitter-topic'
+2021-10-25 12:52:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PDH_SciTechNews: #CyberSecurity Asia Pacific Businesses Identify Zero Trust as Key to Addressing Increasing Cyber Attacks and Flexible… sending to kafka topic twitter-topic
+2021-10-25 12:52:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1448950105059598336, "id": 1452535957190844417, "text": "RT @PDH_SciTechNews: #CyberSecurity Asia Pacific Businesses Identify Zero Trust as Key to Addressing Increasing Cyber Attacks and Flexible\u2026", "createdAt": 1635146533000}' to topic='twitter-topic'
+2021-10-25 12:52:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PDH_SciTechNews: #CyberSecurity Asia Pacific Businesses Identify Zero Trust as Key to Addressing Increasing Cyber Attacks and Flexible… sending to kafka topic twitter-topic
+2021-10-25 12:52:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1337430590241562626, "id": 1452535957572538368, "text": "RT @PDH_SciTechNews: #CyberSecurity Asia Pacific Businesses Identify Zero Trust as Key to Addressing Increasing Cyber Attacks and Flexible\u2026", "createdAt": 1635146533000}' to topic='twitter-topic'
+2021-10-25 12:52:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PDH_SciTechNews: #CyberSecurity Asia Pacific Businesses Identify Zero Trust as Key to Addressing Increasing Cyber Attacks and Flexible… sending to kafka topic twitter-topic
+2021-10-25 12:52:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 709564705304498176, "id": 1452535965428355075, "text": "RT @PDH_SciTechNews: #CyberSecurity Asia Pacific Businesses Identify Zero Trust as Key to Addressing Increasing Cyber Attacks and Flexible\u2026", "createdAt": 1635146535000}' to topic='twitter-topic'
+2021-10-25 12:52:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Desarrollador/a Java (Sector Bancario)
+https://t.co/fJimZZ1iHa
+También estamos en:
+✓ Facebook 👉 https://t.co/jffohn9y2f
+✓ Telegram 👉 https://t.co/UknifRAekq
+¡Te esperamos!
+
+#EmpleoMadrid #TrabajoMadrid #España #Madrid #Empleo #Trabajo #EmpleosMadrid #TrabajosMadrid sending to kafka topic twitter-topic
+2021-10-25 12:52:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 595784663, "id": 1452535996352978946, "text": "Desarrollador/a Java (Sector Bancario)\nhttps://t.co/fJimZZ1iHa\nTambién estamos en:\n✓ Facebook 👉 https://t.co/jffohn9y2f\n✓ Telegram 👉 https://t.co/UknifRAekq\n¡Te esperamos!\n\n#EmpleoMadrid #TrabajoMadrid #España #Madrid #Empleo #Trabajo #EmpleosMadrid #TrabajosMadrid", "createdAt": 1635146543000}' to topic='twitter-topic'
+2021-10-25 12:52:30 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream!
